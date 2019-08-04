@@ -651,7 +651,7 @@
 
     /* 중간 계좌 부분 */
     .middle{
-        height: 21rem;
+        height: 21.6rem;
         background-color: #faf8f8;
         display: flex;
         justify-content: space-between;

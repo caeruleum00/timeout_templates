@@ -591,11 +591,11 @@
     }
 
     .first-comment span{
-        font-size : xx-large;
+        font-size : 2.5rem;
         font-family: 'NotoSerifKR';
         color :white;
         font-weight:bold;
-        line-height: 1.2em;
+        line-height: 1.4em;
     }
 
     .first-comment #light {
