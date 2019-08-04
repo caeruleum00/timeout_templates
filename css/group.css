@@ -451,6 +451,7 @@
     .account {
         width : 94%;
         height: 7rem;
+        margin-top:1rem;
         margin-left: 1rem;
         background-color: rgb(42 182 212);
     }
