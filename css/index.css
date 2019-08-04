@@ -669,7 +669,10 @@
     .second-left .second-comment{
         float: right;
         margin-top: 15rem;
-        margin-right:3rem;
+        margin-right:2rem;
+        color: white;
+        font-size: large;
+        font-weight: bold;
     }
 
     .second-right {
@@ -689,12 +692,18 @@
 
     .second-right .button{
         margin-left:2.5rem;
-        width: 15rem;
+        width: 100%;
         margin-top: 2rem;
         bottom: 2rem;
-        font-size: 0.8rem;
+        font-size: medium;
         color: white;
     }
+
+    .second-right #button-text{
+        font-size: large;
+        color: white;
+    }
+
 
     /* third page */
     .third-left {
