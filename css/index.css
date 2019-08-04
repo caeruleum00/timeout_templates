@@ -584,9 +584,10 @@
         /* margin-top: 0rem; */
         float:left;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
+        margin-left:10%;
         width: 80%;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .first-comment #bord{
@@ -671,7 +672,7 @@
         margin-top: 15rem;
         margin-right:2rem;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
     }
 
