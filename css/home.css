@@ -315,7 +315,7 @@
         background-color:transparent;
     }
 }
-
+/* 두번째꺼 */
 @media screen and (min-width:480px) and (max-width:550px){
     /* 상단 고정바 */
     .head-bar{
@@ -580,6 +580,7 @@
     }
 }
 
+/* 휴대폰 */
 @media screen and (max-width:480px){
     /* 상단 고정바 */
     .head-bar{
@@ -587,7 +588,7 @@
         background-color: rgb(42 182 212);
         display: flex;
         justify-content: space-between;
-        width: 37rem;
+        width: 100%;
         align-items: center;
         text-align: center;
         margin: 0 auto;
@@ -597,23 +598,32 @@
         height: 1.5rem;
         margin-left:2rem;
     }
+    #icon1:hover{
+        cursor: pointer;
+    }
     #logo{
         width: auto;
         height: 1.8rem;
+    }
+    #logo:hover{
+        cursor: pointer;
     }
     #icon2{
         width: auto;
         height: 1.4rem;
         margin-right:2rem;
     }
+    #icon2:hover{
+        cursor: pointer;
+    }
 
     /* 계정 부분 */
     .top{
-        height: 12.5rem;
+        height: 9rem;
         background-color: rgb(42 182 212);
         display: flex;
         justify-content: space-between;
-        width: 37rem;
+        width: 100%;
         align-items: center;
         margin: 0 auto;
     }
@@ -626,13 +636,13 @@
     }
     #bold{
         font-weight: bold; 
-        font-size:xx-large;
+        font-size: x-large;
         color: white;
     }
     /* 계정 사진 */
     #round{
-        width: 9rem;
-        height: 9rem;
+        width: 7rem;
+        height: 7rem;
         border-radius: 50%;
         float:right;
         margin-right: 2rem;
@@ -641,55 +651,56 @@
 
     /* 중간 계좌 부분 */
     .middle{
-        height: 32rem;
+        height: 19rem;
         background-color: #faf8f8;
         display: flex;
         justify-content: space-between;
-        width: 37rem;
+        width: 100%;
         margin: 0 auto;
     }
     .side{
-        width: 2rem;
+        width: 1.5rem;
         float:left;
-        margin-top: 2rem;
-        margin-left: 4rem;
-        margin-right: 3rem;
-        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     /* 계좌 */
     .account{
-        width:30rem;
+        width:70%;
         float:right;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right:2rem;
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+        margin-right:1.5rem;
+        overflow:auto;
     }
     .myaccount {
-        width: 25rem;
-        height: 13rem;
+        width: 95%;
+        height: 10rem;
         background: rgb(188, 224, 253);
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .group {
-        width: 25rem;
-        height: 13rem;
+        width: 95%;
+        height: 10rem;
         background: rgb(42 182 212);
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     #name{
         font-weight: bold; 
-        font-size:large;
-        padding-top: 1.5rem;
+        font-size : medium;
+        padding-top: 1rem;
         padding-left: 1.5rem;
     }
 
     #money{
         font-weight: bold; 
-        font-size: 25pt;
-        padding-top: 1rem;
-        padding-bottom:2rem;
+        font-size: 1.7rem;
+        padding-top: 0.5rem;
+        padding-bottom:1rem;
         text-align: center;
         margin: auto;
     }
@@ -700,12 +711,12 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
-        height: 3.1rem;
+        height: 3.6rem;
     }
     .mbutton{
         /* 송금하기 */
         width: 14.5rem;
-        height: 3.7rem;
+        height: 2.4rem;
         float:left;
         text-align: center;
         border-top-style: solid;
@@ -718,7 +729,7 @@
     .mbutton2{
         /* 구매하기 */
         width: 14.5rem;
-        height: 3.7rem;
+        height: 2.4rem;
         float:left;
         text-align: center;
         border-top-style: solid;
@@ -737,7 +748,7 @@
 
     #font{
         width: 14.5rem;
-        height: 3.7rem;
+        height: 2.4rem;
         display: table-cell;
         vertical-align: middle;
         font-weight: bold;
@@ -746,7 +757,7 @@
     .gbutton{
         /* 송금하기 */
         width: 14.5rem;
-        height: 3.7rem;
+        height: 2.4rem;
         float:left;
         text-align: center;
         color: white;
@@ -760,7 +771,7 @@
     .gbutton2{
         /* 구매하기 */
         width: 14.5rem;
-        height: 3.7rem;
+        height: 2.4rem;
         float:left;
         text-align: center;
         color: white;
@@ -779,23 +790,28 @@
 
     /* 아래(약속) 부분 */
     .bottom{
-        height: 9rem;
+        height: 7rem;
         background-color: #faf8f8;
-        width: 37rem;
+        width: 100%;
         margin: 0 auto;
         margin-top: .6rem;
     }
     #schedule-list{
         font-weight: bold; 
-        font-size:large;
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
+        font-size: medium;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        width: 100%;
+    }
+
+    .schedule:hover{
+        cursor: pointer;
     }
 
     .schedule{
-        width: 35rem;
-        height: 3rem;
-        margin-left: 1rem;
+        width : 94%;
+        height: 2.6rem;
+        margin-left: 3%;
         background-color: rgb(84 103 143);
         border-radius: 1rem 1rem;
         text-align: center;
@@ -806,9 +822,9 @@
         display: table-cell;
         vertical-align: middle;
         width: 10rem;
-        height: 3rem;
+        height: 2.6rem;
         color : white;
-        font-size: large;
+        font-size: medium;
         font-weight: bold;
     }
 
@@ -816,10 +832,10 @@
         display: table-cell;
         vertical-align: middle;
         width: 15rem;
-        height: 3rem;
+        height: 2.6rem;
         color : white;
         font-weight: bold;
-        font-size: large;
+        font-size: medium;
         text-align: center;
     }
 
@@ -827,20 +843,66 @@
         display: table-cell;
         vertical-align: middle;
         width: 10rem;
-        height: 3rem;
+        height: 2.6rem;
         color : white;
         font-weight: bold;
-        font-size: large;
+        font-size: medium;
     }
 
     /* 하단 고정바 */
     .foot-bar{
-        height: 3.7rem;
+        height: 3rem;
         background-color: rgb(42 182 212);
         display: flex;
         justify-content: space-between;
-        width: 37rem;
+        width: 100%;
         align-items: center;
-        margin: 0 auto;
+        /* margin: 0 auto; */
+    }
+    /* 스크롤바 */
+    ::-webkit-scrollbar {
+        width: 10px;
+        /* 세로축 스크롤바 길이 */
+        height: 20px;
+        /* 가로축 스크롤바 길이 */
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color:transparent;
+        width: 20px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-button:start {
+        background-color: transparent;
+        /* Top, Left 방향의 이동버튼 */
+    }
+
+    ::-webkit-scrollbar-button:end {
+        background-color: transparent;
+        /* Bottom, Right 방향의 이동버튼 */
+    }
+
+
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+        /* 우측 하단의 코너 부분 */
+    }
+
+    ::-webkit-resizer {
+        background-color:transparent;
     }
 }

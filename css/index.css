@@ -1,7 +1,7 @@
 /* 메인페이지 */
 /* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); .notosanskr * { font-family: 'Noto Sans KR', sans-serif; }
 @font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; } */
-@media screen and (min-width:550px){
+@media screen and (min-width: 550px){
     li{
         list-style: none;
     }
@@ -148,6 +148,10 @@
         height: 27rem;
     }
 
+    .second-left .second-comment{
+        display:none;
+    }
+
     .second-right {
         /* position: relative; */
         float:right;
@@ -278,9 +282,7 @@
         to {opacity: 1;}
     } */
 }
-
-
-@media screen and (max-width:480px) {
+@media screen and (min-width:480px) and (max-width:550px){
     li{
         list-style: none;
     }
@@ -292,7 +294,7 @@
     #top {
         height: 4rem;
         position: fixed;
-        width: 50%;
+        width: 100%;
         z-index: 9999;
         top: 0;
         left: 0;
@@ -302,10 +304,10 @@
     }
 
     #top .wrapper{
-        width: 90%;
         height: 4rem;
         display: flex;
         justify-content: space-between;
+        width: 25rem;
         align-items: center;
         margin: 0 auto;
     }
@@ -316,15 +318,12 @@
         float: left;
     }
     #menu{
-        display: none;
         float: right;
     }
     #menu li{
-        display: none;
         float: left;
     }
     #menu a {
-        display: none;
         line-height: 75px;
         color: white;
         padding: 0 15px;
@@ -420,6 +419,10 @@
         height: 15.5rem;
     }
 
+    .second-left .second-comment{
+        display:none;
+    }
+
     .second-right {
         /* position: relative; */
         float:right;
@@ -437,6 +440,257 @@
     .second-right .button{
         width: 15rem;
         margin-top: 1rem;
+        bottom: 2rem;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    /* third page */
+    .third-left {
+        display: flex;
+        position: relative;
+        float: left;
+        margin-left: 17rem;
+    }
+
+    .third-right {
+        display: flex;
+        position: relative;
+        float: right;
+        margin-right: 17rem;
+        color: black;
+        font-size: 4rem;
+        align-items: center;
+    }
+
+
+    .button1{
+        cursor: pointer;
+        font-weight: bold;
+        width: 4rem;
+        text-align: center;
+        border-bottom: 2px solid white;
+        padding-bottom: 0.3rem;
+        margin-right:0.3rem;
+    }
+
+    .button2{
+        cursor: pointer;
+        font-weight: bold;
+        width: 4rem;
+        text-align: center;
+        padding-bottom: 0.3rem;
+        margin-right:0.3rem;
+    }
+
+    .button3 {
+        flex:1;
+        cursor: pointer;
+        font-weight: bold;
+        width: 4rem;
+        text-align: center;
+        padding-bottom: 0.3rem;
+        margin-right:0.3rem;
+    }
+
+    .button4{
+        flex:1;
+        cursor: pointer;
+        font-weight: bold;
+        width: 4rem;
+        text-align: center;
+        padding-bottom: 0.3rem;
+    }
+
+    /* banner 띄우기 */
+    #floatMenu {
+        position: absolute;
+        right: 10%;
+        padding: 0;
+        margin: 0;
+        z-index: 1000;
+        text-align: center;
+        top: 110px;
+        /* margin-left: -606px;  */
+        /* 아이콘 위치 조절 */
+    }
+
+    #floatMenu .banner img{
+        width: 7rem;
+        height: 7rem;
+        /* 그림자효과 */
+        -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+        -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+        -ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+        -o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+        filter: drop-shadow(1px 1px 5px rgba(0,0,0,.5));
+    }
+}
+
+@media screen and (max-width:480px) {
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    /* header */
+    #top {
+        height: 4rem;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        margin-top: 1rem;
+        background: transparent;
+        background-color: transparent;
+    }
+
+    #top .wrapper{
+        width: 80%;
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    h1{
+        color:white;
+        line-height: 95px;
+        float: left;
+    }
+    #menu{
+        /* display: none; */
+        float: right;
+    }
+    #menu li{
+        /* display: none; */
+        float: left;
+    }
+    #menu a {
+        /* display: none; */
+        line-height: 75px;
+        color: white;
+        padding: 0 0.3rem;
+        display: block;
+    }
+
+    /* first-page */
+    .first-left{
+        display: flex;
+        /* margin-top: 0rem; */
+        float:left;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .first-comment #bord{
+        font-size : 2.5rem;
+        font-family: 'NotoSerifKR';
+        color : hsl(61, 100%, 71%);
+        font-weight:bold;
+    }
+
+    .first-comment span{
+        font-size : 2.5rem;
+        font-family: 'NotoSerifKR';
+        color :white;
+        font-weight:bold;
+        line-height: 1.2em;
+    }
+
+    .first-comment #light {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 0.9rem;
+        font-weight: lighter;
+        color: white;
+        margin-left: 0.3rem;
+        line-height: 1.2rem;
+    }
+
+    .first-right{
+        position: relative;
+    }
+
+    /* .first-comment{
+        position: absolute;
+        left: -60rem;
+        width: 50rem;
+        margin-left: 17rem;
+        -webkit-animation: slide 1s forwards;
+        -webkit-animation-delay: 1s;
+        animation: slide 1s forwards;
+        animation-delay: 1s;
+    }
+
+    @-webkit-keyframes slide {
+        100% { left: 0; }
+    }
+
+    @keyframes slide {
+        100% { left: 0; }
+    } */
+
+
+    /* second-page */
+    .second {
+        display: flex;
+        flex-direction:column;        
+    }
+
+    .second-left {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+
+    .second-left #phone-img {
+        position :relative;
+        top: 2rem;
+        width : 15rem;
+        height: auto;
+    }
+
+    .second-left #screen {
+        margin-left: 2.1rem;
+        position: absolute;
+        top: 5.2rem;
+        left: 0.16rem;
+        width : 8.8rem;
+        height: 15.5rem;
+    }
+
+    .second-left .second-comment{
+        float: right;
+        margin-top: 15rem;
+        margin-right:3rem;
+    }
+
+    .second-right {
+        /* position: relative; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-right .second-comment {
+        display:none;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size : 1.3rem;
+        color: white;
+        margin-bottom:2rem;
+    }
+
+    .second-right .button{
+        margin-left:2.5rem;
+        width: 15rem;
+        margin-top: 2rem;
         bottom: 2rem;
         font-size: 0.8rem;
         color: white;
