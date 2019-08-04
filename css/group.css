@@ -356,6 +356,7 @@
         margin-top:5%;
         margin-left:5%;
         height: 8rem;
+        margin-bottom:5%;
     }
 
     .group-thumbnail #name{
@@ -422,6 +423,8 @@
     }
 
     .schedule-plus{
+        margin-top: 2%;
+        margin-bottom: 5%;
         margin-left: 92%;
         height:0.5rem;
     }
