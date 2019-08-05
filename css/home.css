@@ -18,12 +18,13 @@
     #logo{
         width: auto;
         height: 1.8rem;
+        margin-right: 35%;
     }
-    #icon2{
+    /* #icon2{
         width: auto;
         height: 1.4rem;
         margin-right:2rem;
-    }
+    } */
 
     /* 계정 부분 */
     .top{
@@ -199,6 +200,42 @@
         background-color:white;
         color:black;
     } 
+
+    /* group 플러스 버튼 */
+    .group-plus {
+        width: 25rem;
+        height: 13rem;
+        background: rgb(42 182 212);
+        margin-bottom: 2rem;
+        display: table-cell;
+        vertical-align: middle;
+        text-align:center;
+        justify-content: center;
+    }
+
+    .group-plus :hover{
+        cursor:pointer;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .group-plus-plus{
+        width :8rem;
+        height: 5rem;
+        text-align: center;
+        margin-left: 8.4rem;
+        border :0.1rem solid white; 
+    }
+    .group-plus-plus :hover{
+        cursor:pointer;
+        background-color:transparent;
+    }
+
+    .group-plus-plus img {
+        margin-top: 1.4rem;
+        vertical-align: middle;
+        width : 2rem;
+        height: 2rem;
+    }
 
     /* 아래(약속) 부분 */
     .bottom{
