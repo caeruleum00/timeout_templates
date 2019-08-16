@@ -903,7 +903,7 @@
 
     .schedule-plus{
         margin-top: 2%;
-        margin-bottom: 5%;
+        margin-bottom: 2vh;
         margin-left: 92%;
         height:0.5rem;
     }
@@ -981,10 +981,11 @@
     /* 멤버별 지각비 내역 */
     .account-content .member-content{
         display: inline-block;
-        width : 93vw;
+        width : 96vw;
         height: 1.5rem;
         margin-top:0.5rem;
-        margin-left: 3.5vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
         border-bottom: 1px solid rgb(84 103 143);
     }
 
