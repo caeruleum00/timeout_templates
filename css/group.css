@@ -758,7 +758,7 @@
 
     .page {
         width : 100vw;
-        max-height: 100vh;
+        max-height: 100%;
         background-color: #faf8f8;
         /* padding-bottom:1rem; */
     }
@@ -806,7 +806,7 @@
 
     /* 젤 위에 썸네일 */
     .group-thumbnail {
-        margin-top: 15vh;
+        margin-top: 10vh;
         margin-left: 5%;
         height: 8rem;
         margin-bottom: 5%;
