@@ -391,7 +391,8 @@
     }
 
     .profile{
-        margin: 12% auto;
+        margin: 0 auto;
+        margin-top: 15%;
     }
 
     .hi {

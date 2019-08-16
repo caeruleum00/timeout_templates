@@ -761,7 +761,6 @@
         height: 100vh;
         background-color: #faf8f8;
         /* padding-bottom:1rem; */
-        overflow: hidden;
     }
     /* 상단 고정바 */
     .head-bar{
@@ -845,21 +844,22 @@
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
+        margin-left: .5rem;
     }
 
     /* 스케줄 이름 */
     .schedule-scroll{
-        width: 100%;
+        width: 100vw;
         height: 7rem;
         overflow-x: hidden;
         overflow-y:scroll;
     }
 
     .schedule{
-        width : 94%;
+        width : 94vw;
         max-height: 5rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 3vw;
+        margin-right: 3vw;
         margin-bottom:0.5rem;
         background-color: rgb(84 103 143);
         border-radius: 1rem 1rem;
@@ -928,9 +928,10 @@
     }
 
     .account {
-        width : 94%;
+        width : 94vw;
         height: 7rem;
-        margin-left: 1rem;
+        margin-left: 3vw;
+        margin-right: 3vw;
         background-color: rgb(42 182 212);
     }
 
@@ -970,21 +971,20 @@
 
     /* 내역전체 감싸는 태그  */
     .account-content{
-        width : 94%;
+        width : 94vw;
         height: 8rem;
-        margin-left: 1rem;
+        margin-left: 3vw;
         background-color: rgb(188 224 253);
         overflow: auto;
-        margin-bottom:0.7rem;
     }
 
     /* 멤버별 지각비 내역 */
     .account-content .member-content{
         display: inline-block;
-        width : 93%;
+        width : 93vw;
         height: 1.5rem;
         margin-top:0.5rem;
-        margin-left: 1rem;
+        margin-left: 3.5vw;
         border-bottom: 1px solid rgb(84 103 143);
     }
 
