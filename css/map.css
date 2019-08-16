@@ -809,7 +809,7 @@
     }
 
     .schedule {
-        width: 90%;
+        width: 90vw;
         height: 3rem;
         margin-left: 5%;
         background-color: rgb(84 103 143);
@@ -857,7 +857,7 @@
         background-color: rgb(42 182 212);
         display: flex;
         justify-content: space-between;
-        width: 100vh;
+        width: 100vw;
         align-items: center;
         margin: 0 auto;
     }
@@ -865,7 +865,7 @@
     #foot-home{
         width: auto;
         height: 2.5rem;
-        margin-left:2rem;
+        margin-left:2.5rem;
     }
     #foot-invite{
         width: auto;
@@ -878,7 +878,7 @@
     #foot-user{
         width: auto;
         height: 2.5rem;
-        margin-right:2rem;
+        margin-right:2.5rem;
     }
     
 

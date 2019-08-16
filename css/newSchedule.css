@@ -445,6 +445,7 @@
         flex-direction: column;
         justify-content: center;
         height: 100vh;
+        width:100vw;
         overflow-y: hidden;
         background-color: #faf8f8;
         align-items: center;
@@ -453,7 +454,7 @@
     .title {
         font-weight: bold;
         font-size: x-large;
-        margin-top: 5rem;
+        margin-top: 10vh;
         margin-bottom : 2rem;
     }
     
@@ -568,7 +569,7 @@
     #foot-home{
         width: auto;
         height: 2.5rem;
-        margin-left:2rem;
+        margin-left:2.5rem;
     }
     #foot-invite{
         width: auto;
@@ -581,7 +582,7 @@
     #foot-user{
         width: auto;
         height: 2.5rem;
-        margin-right:2rem;
+        margin-right:2.5rem;
     }
 
 }

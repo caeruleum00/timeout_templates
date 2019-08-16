@@ -391,7 +391,7 @@
     }
 
     .profile{
-        margin: 15% auto;
+        margin: 12% auto;
     }
 
     .hi {
@@ -503,7 +503,7 @@
         display:flex;
         align-items: center;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
         position: relative;
     }
 
