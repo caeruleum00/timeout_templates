@@ -8,13 +8,15 @@
 
     .page {
         width : 37rem;
-        height: auto;
+        height: 50rem;
         background-color: #faf8f8;
         /* margin-top: 3%; */
         padding-bottom:1rem;
     }
     /* 상단 고정바 */
     .head-bar{
+        top: 0; 
+        position: fixed;
         height: 3.7rem;
         background-color: rgb(42 182 212);
         display: flex;
@@ -45,7 +47,7 @@
 
     #icon2{
         width: auto;
-        height: 1.4rem;
+        height: 24px;
         margin-right:2rem;
     }
 
@@ -57,6 +59,25 @@
     .group-thumbnail {
         margin : 1.5rem 1.5rem;
         height: 10rem;
+        margin-top: 5.2rem;
+    }
+
+    .group-thumbnail .group-members{
+        width: 32rem;
+        height: 10rem;
+        margin: 0 auto;
+        margin-top: .5rem;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .group-thumbnail .group-members .one-member{
+        height: 10rem;
+        justify-content: center;
+    }
+    .group-thumbnail .group-members .one-member #nickname{
+        text-align: center;
     }
 
     .group-thumbnail #name{
@@ -73,13 +94,66 @@
         width: 7rem;
         height: 7rem;
         border-radius: 50%;
+        margin-left: .5rem;
+    }
+
+    /* 스크롤바 */
+    ::-webkit-scrollbar {
+        width: 0px;
+        /* 세로축 스크롤바 길이 */
+        height: 0px;
+        /* 가로축 스크롤바 길이 */
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color:transparent;
+        width: 0px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-button:start {
+        background-color: transparent;
+        /* Top, Left 방향의 이동버튼 */
+    }
+
+    ::-webkit-scrollbar-button:end {
+        background-color: transparent;
+        /* Bottom, Right 방향의 이동버튼 */
+    }
+
+
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+        /* 우측 하단의 코너 부분 */
+    }
+
+    ::-webkit-resizer {
+        background-color:transparent;
     }
 
     /* 스케줄 이름 */
+    .schedule-scroll{
+        width: 38rem;
+        height: 7rem;
+        overflow-x: hidden;
+        overflow-y:scroll;
+    }
     .schedule{
         width: 35rem;
         height: 3rem;
-        margin-top:1rem;
         margin-left: 1rem;
         margin-bottom:0.5rem;
         background-color: rgb(84 103 143);
@@ -192,11 +266,11 @@
     /* 내역전체 감싸는 태그  */
     .account-content{
         width: 35rem;
-        max-height: 10rem;
+        height: 10rem;
         margin-left: 1rem;
         background-color: rgb(188 224 253);
         overflow: auto;
-        margin-bottom:0.7rem;
+        margin-bottom:4.4rem;
     }
 
     /* 멤버별 지각비 내역 */
@@ -241,6 +315,8 @@
 
     /* 하단 고정바 */
     .foot-bar{
+        bottom: 0; 
+        position: fixed;
         height: 3.7rem;
         background-color: rgb(42 182 212);
         display: flex;
@@ -249,6 +325,26 @@
         align-items: center;
         margin: 0 auto;
     }
+    
+    #foot-home{
+        width: auto;
+        height: 2.5rem;
+        margin-left:4rem;
+    }
+    #foot-invite{
+        width: auto;
+        height: 2.5rem;
+    }
+    #foot-bell{
+        width: auto;
+        height: 2.5rem;
+    }
+    #foot-user{
+        width: auto;
+        height: 2.5rem;
+        margin-right:4rem;
+    }
+    
 
     /* 스크롤바 */
     ::-webkit-scrollbar {
@@ -267,7 +363,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        border-radius: 8px;
+        border-radius: 0px;
         background-color: transparent;
     }
 
@@ -313,6 +409,8 @@
     }
     /* 상단 고정바 */
     .head-bar{
+        top: 0; 
+        position: fixed;
         height: 3.7rem;
         background-color: rgb(42 182 212);
         display: flex;
@@ -359,6 +457,24 @@
         margin-bottom:5%;
     }
 
+    .group-thumbnail .group-members{
+        width: 32rem;
+        height: 10rem;
+        margin: 0 auto;
+        margin-top: .5rem;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .group-thumbnail .group-members .one-member{
+        height: 10rem;
+        justify-content: center;
+    }
+    .group-thumbnail .group-members .one-member #nickname{
+        text-align: center;
+    }
+
     .group-thumbnail #name{
         font-size: 0.9rem;
         color : #1f1f1f;
@@ -376,9 +492,16 @@
     }
 
     /* 스케줄 이름 */
+    .schedule-scroll{
+        width: 38rem;
+        height: 7rem;
+        overflow-x: hidden;
+        overflow-y:scroll;
+    }
+
     .schedule{
         width : 94%;
-        height: 2rem;
+        max-height: 5rem;
         margin-left: 1rem;
         margin-right: 1rem;
         margin-bottom:0.5rem;
@@ -492,7 +615,7 @@
     /* 내역전체 감싸는 태그  */
     .account-content{
         width : 94%;
-        max-height: 8rem;
+        height: 8rem;
         margin-left: 1rem;
         background-color: rgb(188 224 253);
         overflow: auto;
@@ -544,20 +667,42 @@
 
     /* 하단 고정바 */
     .foot-bar{
+        bottom: 0; 
+        position: fixed;
         height: 3.7rem;
         background-color: rgb(42 182 212);
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 37rem;
         align-items: center;
         margin: 0 auto;
     }
+    
+    #foot-home{
+        width: auto;
+        height: 2.5rem;
+        margin-left:4rem;
+    }
+    #foot-invite{
+        width: auto;
+        height: 2.5rem;
+    }
+    #foot-bell{
+        width: auto;
+        height: 2.5rem;
+    }
+    #foot-user{
+        width: auto;
+        height: 2.5rem;
+        margin-right:4rem;
+    }
+    
 
     /* 스크롤바 */
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 0px;
         /* 세로축 스크롤바 길이 */
-        height: 20px;
+        height: 0px;
         /* 가로축 스크롤바 길이 */
     }
 
@@ -570,14 +715,14 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        border-radius: 8px;
+        border-radius: 0px;
         background-color: transparent;
     }
 
     ::-webkit-scrollbar-button {
         background-color:transparent;
-        width: 20px;
-        height: 10px;
+        width: 0px;
+        height: 0px;
     }
 
     ::-webkit-scrollbar-button:start {
@@ -613,12 +758,13 @@
 
     .page {
         width : 100%;
-        height: 100%;
+        height: auto;
         background-color: #faf8f8;
         /* padding-bottom:1rem; */
     }
     /* 상단 고정바 */
     .head-bar{
+        top: 0; 
         position: fixed;
         height: 3.7rem;
         background-color: rgb(42 182 212);
@@ -666,6 +812,22 @@
         margin-bottom:3%;
     }
 
+    .group-thumbnail .group-members{
+        width: 32rem;
+        height: 10rem;
+        margin: 0 auto;
+        margin-top: .5rem;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .group-thumbnail .group-members .one-member{
+        height: 10rem;
+        justify-content: center;
+    }
+    .group-thumbnail .group-members .one-member #nickname{
+        text-align: center;
+    }
     .group-thumbnail #name{
         font-size: large;
         color : #1f1f1f;
@@ -680,9 +842,65 @@
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
+        
     }
 
+
+     /* 스크롤바 */
+     ::-webkit-scrollbar {
+        width: 0px;
+        /* 세로축 스크롤바 길이 */
+        height: 0px;
+        /* 가로축 스크롤바 길이 */
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-button {
+        background-color: transparent;
+        width: 0px;
+        height: 0px;
+    }
+    
+    ::-webkit-scrollbar-button:start {
+        background-color: transparent;
+        /* Top, Left 방향의 이동버튼 */
+    }
+    
+    ::-webkit-scrollbar-button:end {
+        background-color: transparent;
+        /* Bottom, Right 방향의 이동버튼 */
+    }
+    
+    
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+        /* 우측 하단의 코너 부분 */
+    }
+    
+    ::-webkit-resizer {
+        background-color: transparent;
+    }
+    
     /* 스케줄 이름 */
+    .schedule-scroll{
+        width: 38rem;
+        height: 7rem;
+        overflow-x: hidden;
+        overflow-y:scroll;
+    }
+    
     .schedule{
         width : 94%;
         height: 2.6rem;
@@ -797,7 +1015,7 @@
     /* 내역전체 감싸는 태그  */
     .account-content{
         width : 94%;
-        max-height: 10rem;
+        height: 10rem;
         margin-left: 3%;
         background-color: rgb(188 224 253);
         overflow: auto;
@@ -849,21 +1067,42 @@
 
     /* 하단고정바 */
     .foot-bar{
+        bottom: 0; 
         position: fixed;
         height: 3.7rem;
         background-color: rgb(42 182 212);
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 37rem;
         align-items: center;
         margin: 0 auto;
     }
+    
+    #foot-home{
+        width: auto;
+        height: 2.5rem;
+        margin-left:4rem;
+    }
+    #foot-invite{
+        width: auto;
+        height: 2.5rem;
+    }
+    #foot-bell{
+        width: auto;
+        height: 2.5rem;
+    }
+    #foot-user{
+        width: auto;
+        height: 2.5rem;
+        margin-right:4rem;
+    }
+    
 
     /* 스크롤바 */
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 0px;
         /* 세로축 스크롤바 길이 */
-        height: 20px;
+        height: 0px;
         /* 가로축 스크롤바 길이 */
     }
 
@@ -876,14 +1115,14 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        border-radius: 8px;
+        border-radius: 0px;
         background-color: transparent;
     }
 
     ::-webkit-scrollbar-button {
         background-color:transparent;
-        width: 20px;
-        height: 10px;
+        width: 0px;
+        height: 0px;
     }
 
     ::-webkit-scrollbar-button:start {
