@@ -38,8 +38,9 @@
                 <a href="./"><img id="icon2" src="img/bell.png" alt=""></a>
             </div>
             {% if not first %}
-            <br><br><br><br>
-            <h1>약속이없습니다.</h1>
+            <div class="no">
+                <span id="noarrive">약속이 없습니다</span>
+            </div>
             {% else %}
             <!-- 지도인증 부분 -->
             <div class="arrive">
@@ -53,10 +54,11 @@
                         <span id="reach-pc">타임인증하기</span>
                         <span id="group-name">그룹 : {{first.group_ac.title}}</span>
                         <span id="schedule">약속내용 : {{first.title}} {{first.date.hour}}시 {{first.date.minute}}분</span>
-                    </div>
-
-                    <div id="red" class="alert alert-danger" role="alert">
-                        <p id="demo" name="{{asdfa}}"></p>
+                        
+                        <div id="red" class="alert alert-danger" role="alert">
+                            <p id="demo" name="{{asdfa}}"></p>
+                        </div>
+                    
                     </div>
 
 
