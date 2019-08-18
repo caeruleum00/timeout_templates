@@ -504,28 +504,29 @@
 
     /* 아래(약속) 부분 */
     .bottom {
-        height: 10.5rem;
+        height: 11rem;
         background-color: #faf8f8;
         width: 95%;
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 4.7rem;
-        overflow: scroll;
+        overflow: hidden;
         background-color: #f0f0f0;
+        border-radius: .5rem;
         ;
     }
 
     #schedule-list {
         font-weight: bold;
         font-size: large;
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
     }
 
     .schedule-scroll {
-        height: 6.5rem;
-        overflow: scroll;
+        height: 6.8rem;
+        overflow-y: scroll;
     }
 
     .schedule {
@@ -848,28 +849,29 @@
 
     /* 아래(약속) 부분 */
     .bottom {
-        height: 10.5rem;
+        height: 11rem;
         background-color: #faf8f8;
         width: 95%;
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 4.7rem;
-        overflow: scroll;
+        overflow: hidden;
         background-color: #f0f0f0;
+        border-radius: .5rem;
         ;
     }
 
     #schedule-list {
         font-weight: bold;
         font-size: large;
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
     }
 
     .schedule-scroll {
-        height: 6.5rem;
-        overflow: scroll;
+        height: 6.8rem;
+        overflow-y: scroll;
     }
 
     .schedule {
