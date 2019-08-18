@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/newSchedule.css">
-    <title>schedule 만드는페이지</title>
-
-        <style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>schedule</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <style>
         @media screen and (min-width:550px) {
             .center {
                 display: flex;
@@ -19,7 +31,7 @@
 
             .page {
                 width: 37rem;
-                height: 40rem;
+                height: 100vh;
                 background-color: #faf8f8;
             }
 
@@ -29,6 +41,8 @@
                 position: fixed;
                 height: 3.7rem;
                 background-color: rgb(42 182 212);
+                -moz-background-color: rgb(42 182 212);
+                -webkit-background-color: rgb(42 182 212);
                 display: flex;
                 justify-content: space-between;
                 width: 37rem;
@@ -224,7 +238,7 @@
 
             .page {
                 width: 100vw;
-                height: 100%;
+                height: 100vh;
                 background-color: #faf8f8;
             }
 
@@ -234,6 +248,8 @@
                 position: fixed;
                 height: 3.7rem;
                 background-color: rgb(42 182 212);
+                -moz-background-color: rgb(42 182 212);
+                -webkit-background-color: rgb(42 182 212);
                 display: flex;
                 justify-content: space-between;
                 width: 100vw;
@@ -272,26 +288,26 @@
 
             .schedule {
                 margin: 0 auto;
-                margin-top: 2rem;
-                display: flex;
+                display:flex;
                 flex-direction: column;
-                justify-content: center;
                 width: 100vw;
-                height: 100%;
+                height: 91%;
+                justify-content: center;
                 overflow-y: hidden;
                 background-color: #faf8f8;
                 align-items: center;
+                
             }
 
             .title {
                 font-weight: bold;
                 font-size: x-large;
+                margin-bottom: 2rem;
             }
 
             .form-group {
-                position: relative;
                 display: flex;
-                margin-top: 3vh;
+                margin-bottom: 20px;
             }
 
             input {
@@ -304,6 +320,7 @@
                 width: 19rem;
                 height: 44px;
                 border: 1.5px solid rgb(131, 130, 130);
+                ;
                 -moz-border-radius: 27px;
                 -webkit-border-radius: 27px;
                 border-radius: 27px;
@@ -336,7 +353,7 @@
             }
 
             input::placeholder {
-                font-weight: bold;
+                font-weight: bold
             }
 
 
@@ -358,7 +375,7 @@
             }
 
             .button {
-                width: 75px;
+                width: 45vw;
                 height: 45px;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1rem;
@@ -393,8 +410,28 @@
                 align-items: center;
                 margin: 0 auto;
             }
-            
 
+            #foot-home {
+                width: auto;
+                height: 2.5rem;
+                margin-left: 2.5rem;
+            }
+
+            #foot-invite {
+                width: auto;
+                height: 2.5rem;
+            }
+
+            #foot-bell {
+                width: auto;
+                height: 2.5rem;
+            }
+
+            #foot-user {
+                width: auto;
+                height: 2.5rem;
+                margin-right: 2.5rem;
+            }
         }
 
         @media screen and (max-width: 480px) {
@@ -407,7 +444,7 @@
 
             .page {
                 width: 100vw;
-                height: 100%;
+                height: 100vh;
                 background-color: #faf8f8;
             }
 
@@ -417,6 +454,8 @@
                 position: fixed;
                 height: 3.7rem;
                 background-color: rgb(42 182 212);
+                -moz-background-color: rgb(42 182 212);
+                -webkit-background-color: rgb(42 182 212);
                 display: flex;
                 justify-content: space-between;
                 width: 100vw;
@@ -455,26 +494,26 @@
 
             .schedule {
                 margin: 0 auto;
-                margin-top: 2rem;
-                display: flex;
+                display:flex;
                 flex-direction: column;
-                justify-content: center;
                 width: 100vw;
-                height: 100%;
+                height: 91%;
+                justify-content: center;
                 overflow-y: hidden;
                 background-color: #faf8f8;
                 align-items: center;
+                
             }
 
             .title {
                 font-weight: bold;
                 font-size: x-large;
+                margin-bottom: 2rem;
             }
 
             .form-group {
-                position: relative;
                 display: flex;
-                margin-top: 3vh;
+                margin-bottom: 20px;
             }
 
             input {
@@ -487,6 +526,7 @@
                 width: 19rem;
                 height: 44px;
                 border: 1.5px solid rgb(131, 130, 130);
+                ;
                 -moz-border-radius: 27px;
                 -webkit-border-radius: 27px;
                 border-radius: 27px;
@@ -519,7 +559,7 @@
             }
 
             input::placeholder {
-                font-weight: bold;
+                font-weight: bold
             }
 
 
@@ -541,7 +581,7 @@
             }
 
             .button {
-                width: 75px;
+                width: 45vw;
                 height: 45px;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1rem;
@@ -576,8 +616,28 @@
                 align-items: center;
                 margin: 0 auto;
             }
-            
 
+            #foot-home {
+                width: auto;
+                height: 2.5rem;
+                margin-left: 2.5rem;
+            }
+
+            #foot-invite {
+                width: auto;
+                height: 2.5rem;
+            }
+
+            #foot-bell {
+                width: auto;
+                height: 2.5rem;
+            }
+
+            #foot-user {
+                width: auto;
+                height: 2.5rem;
+                margin-right: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -596,20 +656,22 @@
                 <form action="{% url 'create' group.id %}">
                     <div class="form-group">
                         <label id="name" for="formGroupExampleInput">약속이름</label>
-                        <input type="text" name="title" class="form-control" id="formGroupExampleInput" placeholder="약속이름">
+                        <input type="text" name="title" class="form-control" id="formGroupExampleInput"
+                            placeholder="약속이름">
                     </div>
                     <div class="form-group">
                         <label id="name" for="formGroupExampleInput">벌금</label>
-                        <input type="number" name="penalty" class="form-control" id="formGroupExampleInput"  placeholder="벌금">
+                        <input type="number" name="penalty" class="form-control" id="formGroupExampleInput"
+                            placeholder="벌금">
                     </div>
                     <div class="form-group">
                         <label id="name" for="formGroupExampleInput">날짜</label>
-                        <input type="date" name="date" class="form-control" id="formGroupExampleInput"  placeholder="날짜">
+                        <input type="date" name="date" class="form-control" id="formGroupExampleInput" placeholder="날짜">
                     </div>
                     <div class="form-group">
                         <label id="name" for="formGroupExampleInput">시간</label>
                         <input type="time" name="time" min="00:00" max="24:00" class="form-control"
-                            id="formGroupExampleInput"  placeholder="시간">
+                            id="formGroupExampleInput" placeholder="시간">
                     </div>
 
                     <div class="create_schedule">
@@ -617,34 +679,35 @@
                     </div>
                 </form>
             </div>
+            <!-- 하단 고정바 -->
+            <div class="foot-bar">
+                <a href="{% url 'home' %}"><img id="foot-home" src="img/home.png" alt=""></a>
+                <a href="{% url 'check' %}"><img id="foot-invite" src="img/invite.png" alt=""></a>
+                <a href="{% url 'map' %}"><img id="foot-bell" src="img/bell.png" alt=""></a>
+                <a href="{% url 'portfolio' %}"><img id="foot-user" src="img/user.png" alt=""></a>
+            </div>
 
         </div>
-        <!-- 하단 고정바 -->
-        <div class="foot-bar">
-            <a href="{% url 'home' %}"><img id="foot-home" src="img/home.png" alt=""></a>
-            <a href="{% url 'check' %}"><img id="foot-invite" src="img/invite.png" alt=""></a>
-            <a href="{% url 'map' %}"><img id="foot-bell" src="img/bell.png" alt=""></a>
-            <a href="{% url 'portfolio' %}"><img id="foot-user" src="img/user.png" alt=""></a>
-        </div>
+
     </div>
 
     <!-- 계좌생성 버튼 -->
     <script>
-            $(document).ready(function () {
+        $(document).ready(function () {
             var formInputs = $('input[type="text"],input[type="number"],input[type="date"],input[type="time"]');
             formInputs.focus(function () {
-            $(this).parent().children('label#name').addClass('formTop');
+                $(this).parent().children('label#name').addClass('formTop');
             });
             formInputs.focusout(function () {
-            if ($.trim($(this).val()).length == 0) {
-            $(this).parent().children('label#name').removeClass('formTop');
-            }
+                if ($.trim($(this).val()).length == 0) {
+                    $(this).parent().children('label#name').removeClass('formTop');
+                }
             });
             $('label#name').click(function () {
-            $(this).parent().children('.form-control').focus();
+                $(this).parent().children('.form-control').focus();
             });
-            });
-        </script>
+        });
+    </script>
 
 </body>
 
